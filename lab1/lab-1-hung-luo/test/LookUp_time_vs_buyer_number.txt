@@ -1,0 +1,10 @@
+1 1 localhost:9100 2,3,4,5,6,7,8,9,10 localhost:9200,localhost:9300,localhost:9400,localhost:9500,localhost:9600,localhost:9700,localhost:9800,localhost:9900,localhost:10000
+2 0 localhost:9200 1 localhost:9100
+3 0 localhost:9300 1 localhost:9100
+4 0 localhost:9400 1 localhost:9100
+5 0 localhost:9500 1 localhost:9100
+6 0 localhost:9600 1 localhost:9100
+7 0 localhost:9700 1 localhost:9100
+8 0 localhost:9800 1 localhost:9100
+9 0 localhost:9900 1 localhost:9100
+10 0 localhost:10000 1 localhost:9100

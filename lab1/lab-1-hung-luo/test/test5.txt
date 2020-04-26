@@ -1,0 +1,4 @@
+1 0 localhost:9100 3,4 localhost:9300,localhost:9400
+2 0 localhost:9200 3,4 localhost:9300,localhost:9400
+3 1 localhost:9300 1,2,4 localhost:9100,localhost:9200,localhost:9400
+4 0 localhost:9400 1,2,3 localhost:9100,localhost:9200,localhost:9300

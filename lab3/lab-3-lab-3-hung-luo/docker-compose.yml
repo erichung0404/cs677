@@ -1,0 +1,55 @@
+version: '3'
+
+networks:
+  isolation-network:
+    driver: bridge
+
+services:
+
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        component: frontend
+    ports:
+      - 5000:5000
+    networks:
+      - isolation-network
+
+  catalog:
+    container_name: catalog
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        component: catelog
+    ports:
+      - 5100:5100
+    networks:
+      - isolation-network
+
+  order:
+    container_name: order
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        component: order
+    ports:
+      - 5200:5200
+    networks:
+      - isolation-network
+
+  client:
+    container_name: client
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        component: client
+    ports:
+      - 5300:5300
+    networks:
+      - isolation-network
